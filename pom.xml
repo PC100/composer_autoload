@@ -60,7 +60,6 @@
                   <type>jar</type>
                   <overWrite>false</overWrite>
                   <outputDirectory>${project.build.directory}</outputDirectory>
-                  <destFileName>HelloWorld-5.0.2.jar</destFileName>
                 </artifactItem>
               </artifactItems>
               <outputDirectory>${project.build.directory}</outputDirectory>
@@ -89,11 +88,11 @@
             <configuration>
                 <groupId>co.cask.cdap</groupId>
                 <artifactId>HelloWorld</artifactId>
-                <version>5.0.2</version>
+                <version>5.0.0</version>
                 <packaging>jar</packaging>
-                <file>${project.build.directory}/HelloWorld-5.0.2.jar</file>
+                <file>${project.build.directory}/HelloWorld-5.0.0.jar</file>
                 <repositoryId>deployment</repositoryId>
-                <url>http://10.5.3.102:8081/repositories/deployment</url>
+                <url>http://10.5.3.102:8081/repository/deployment</url>
             </configuration>
         </execution>
       </executions>
@@ -106,26 +105,26 @@
   <distributionManagement>
     <repository>
       <id>deployment</id>
-      <url>http://10.5.3.102:8081/repositories/deployment</url>
+      <url>http://10.5.3.102:8081/repository/deployment</url>
     </repository>
   </distributionManagement>
 
   <repositories>
     <repository>
       <id>dependency</id>
-      <url>http://10.5.3.102:8081/repositories/dependency</url>
+      <url>http://10.5.3.102:8081/repository/dependency</url>
     </repository>
 
     <repository>
       <id>deployment</id>
-      <url>http://10.5.3.102:8081/repositories/deployment</url>
+      <url>http://10.5.3.102:8081/repository/deployment</url>
     </repository>
   </repositories>
   <pluginRepositories>
  <pluginRepository>
   <id>dependency</id>
   <name>dependency</name>
-  <url>http://10.5.3.102:8081/repositories/dependency</url>
+  <url>http://10.5.3.102:8081/repository/dependency</url>
   <releases>
    <enabled>true</enabled>
   </releases>
