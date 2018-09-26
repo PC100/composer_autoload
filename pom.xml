@@ -92,64 +92,40 @@
                 <version>5.0.2</version>
                 <packaging>jar</packaging>
                 <file>${project.build.directory}/HelloWorld-5.0.2.jar</file>
-                <repositoryId>sample2</repositoryId>
-                <url>http://10.5.2.210:8081/nexus/content/repositories/sample2</url>
+                <repositoryId>deployment</repositoryId>
+                <url>http://10.5.3.102:8081/repositories/deployment</url>
             </configuration>
         </execution>
       </executions>
       </plugin>
-<!--
-      <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>1.5.1</version>
-        <executions>
-            <execution>
-              <id>nexus</id>
-              <phase>deploy</phase>
-              <goals>
-                <goal>deploy</goal>
-              </goals>
-            </execution>
-        </executions>
-        <configuration>
-          <repoId>sample2</repoId>
-          <url>http://10.5.2.210:8081/nexus/content/repositories/sample2</url>
-          <file>${project.build.directory}/HelloWorld-5.0.0.jar</file>
-          <groupId>co.cask.cdap</groupId>
-          <artifactId>HelloWorld</artifactId>
-          <version>5.0.0</version>
-          <generatePom>true</generatePom>
-        </configuration>
-      </plugin>
--->
+      
     </plugins>
 
   </build>
 
   <distributionManagement>
     <repository>
-      <id>sample2</id>
-      <url>http://10.5.2.210:8081/nexus/content/repositories/sample2</url>
+      <id>deployment</id>
+      <url>http://10.5.3.102:8081/repositories/deployment</url>
     </repository>
   </distributionManagement>
 
   <repositories>
     <repository>
-      <id>sample</id>
-      <url>http://10.5.2.210:8081/nexus/content/repositories/sample</url>
+      <id>dependency</id>
+      <url>http://10.5.3.102:8081/repositories/dependency</url>
     </repository>
 
     <repository>
-      <id>sample2</id>
-      <url>http://10.5.2.210:8081/nexus/content/repositories/sample2</url>
+      <id>deployment</id>
+      <url>http://10.5.3.102:8081/repositories/deployment</url>
     </repository>
   </repositories>
   <pluginRepositories>
  <pluginRepository>
-  <id>sample</id>
-  <name>sample</name>
-  <url>http://10.5.2.210:8081/nexus/content/repositories/sample</url>
+  <id>dependency</id>
+  <name>dependency</name>
+  <url>http://10.5.3.102:8081/repositories/dependency</url>
   <releases>
    <enabled>true</enabled>
   </releases>
