@@ -54,9 +54,9 @@
             <configuration>
               <artifactItems>
                 <artifactItem>
-                  <groupId>co.cask.cdap</groupId>
-                  <artifactId>HelloWorld</artifactId>
-                  <version>5.0.0</version>
+                  <groupId>com.mycompany.app</groupId>
+                  <artifactId>my-app</artifactId>
+                  <version>1.0</version>
                   <type>jar</type>
                   <overWrite>false</overWrite>
                   <outputDirectory>${project.build.directory}</outputDirectory>
@@ -86,11 +86,11 @@
                 <goal>deploy-file</goal>
             </goals>
             <configuration>
-                <groupId>co.cask.cdap</groupId>
-                <artifactId>HelloWorld</artifactId>
-                <version>5.0.0</version>
+                <groupId>com.mycompany.app</groupId>
+                <artifactId>my-app</artifactId>
+                <version>1.0</version>
                 <packaging>jar</packaging>
-                <file>${project.build.directory}/HelloWorld-5.0.0.jar</file>
+                <file>${project.build.directory}/my-app-1.0.jar</file>
                 <repositoryId>deployment</repositoryId>
                 <url>http://10.5.3.102:8081/repository/deployment</url>
             </configuration>
