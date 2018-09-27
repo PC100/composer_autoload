@@ -54,9 +54,9 @@
             <configuration>
               <artifactItems>
                 <artifactItem>
-                  <groupId>com.mycompany.app2</groupId>
-                  <artifactId>app2</artifactId>
-                  <version>1.0.9</version>
+                  <groupId>com.mycompany.app</groupId>
+                  <artifactId>my-app</artifactId>
+                  <version>1.0</version>
                   <type>jar</type>
                   <overWrite>false</overWrite>
                   <outputDirectory>${project.build.directory}</outputDirectory>
